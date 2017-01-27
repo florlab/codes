@@ -67,6 +67,73 @@
             float: left;
             background: #286090;
         }
+
+        @media screen and (max-width: 1190px) {  /*laptop*/
+            .header-container{background: blue;}
+        }
+        @media screen and (max-width: 980px) { /* pad */
+            .header-container{background: violet;}
+        }
+        @media screen and (max-width:960px){
+            .header-container{background: green;}
+        }
+        @media screen and (max-width: 800px) and (min-width: 750px){
+            .header-container{background: orange;}
+        }
+        @media screen and (max-width:767px){ /* phone */
+            .header-container{background: brown;}
+        }
+        @media screen and (max-width: 749px) and (min-width: 700px){
+            .header-container{background: lightblue;}
+        }
+        @media screen and (max-width: 500px){
+            .header-container{background: lime;}
+        }
+        @media screen and (max-width: 479px) { /* mini phone */
+            .header-container{background: magenta;}
+        }
+
+
+
+
+
+
+
+
+
+
+
+        /*@media screen and (min-width:767px) and (max-width:980px){
+            .header-container{background: black;}
+        }*/
+        /*@media screen and (max-width: 699px) and (orientation: landscape){
+            .header-container{background: olive;}
+        }
+        @media screen and (max-width: 600px) and (orientation: landscape){
+            .header-container{background: teal;}
+        }*/
+
+
+        /*@media screen and (min-resolution:300dpi) and (max-width:960px){
+            .header-container{background: white;}
+        }*/
+
+
+        /* iPads (portrait) ----------- */
+        @media only screen
+        and (min-device-width : 768px)
+        and (max-device-width : 1024px)
+        and (orientation : portrait) {
+            .header-container{background: yellow;}
+        }
+        /* iPads (landscape) ----------- */
+        @media only screen
+        and (min-device-width : 768px)
+        and (max-device-width : 1024px)
+        and (orientation : landscape) {
+            .header-container{background: red;}
+        }
+
     </style>
 </head>
 <body>
