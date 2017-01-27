@@ -30,6 +30,60 @@
         bottom: 0;
         margin: auto;
     }
+    @media screen and (min-resolution:300dpi) and (max-width:960px){
+
+    }
+    @media screen and (max-width: 479px) { /* mini phone */
+
+    }
+    @media screen and (max-width: 500px){
+
+    }
+    @media screen and (max-width: 600px) and (orientation: landscape){
+
+    }
+    @media screen and (max-width: 699px) and (orientation: landscape){
+
+    }
+    @media screen and (max-width: 749px) and (min-width: 700px){
+
+    }
+    @media screen and (max-width: 800px) and (min-width: 700px){
+
+    }
+    @media screen and (max-width: 800px) and (min-width: 750px){
+
+    }
+    @media screen and (max-width:767px){ /* phone */
+
+    }
+    @media screen and (min-width:767px) and (max-width:980px){
+
+    }
+    @media screen and (max-width: 980px) { /* pad */
+
+    }
+    @media screen and (max-width:960px){
+
+    }
+    @media screen and (max-width: 1190px) { /* laptop */
+
+    }
+    /* iPads (portrait) ----------- */
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : portrait) {
+
+    }
+
+    /* iPads (landscape) ----------- */
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : landscape) {
+
+    }
 </style>
 
 <input type='checkbox' name='thing' value='valuable' id="thing"/><label for="thing"></label>
