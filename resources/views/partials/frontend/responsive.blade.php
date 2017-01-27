@@ -73,6 +73,13 @@
         }
         @media screen and (max-width: 980px) { /* pad */
             .header-container{background: violet;}
+
+            .center-container{
+                width: 75%;
+            }
+            .right-container{
+                width: 100%;
+            }
         }
         @media screen and (max-width:960px){
             .header-container{background: green;}
@@ -91,6 +98,8 @@
         }
         @media screen and (max-width: 479px) { /* mini phone */
             .header-container{background: magenta;}
+
+
         }
 
 
