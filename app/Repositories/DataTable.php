@@ -6,6 +6,8 @@ class DataTable
 {
     public static function setDatatable($cQryObj, $aColumns = array(), $sIndexColumn = "")
     {
+        //setDatatable($query, array('tbl_behavior.title', 'tbl_behavior.description'), 'id');
+
         $Sortdir = Input::get('sSortDir_0');
         $iDisplayStart = Input::get('iDisplayStart');
         $iDisplayLength = Input::get('iDisplayLength');

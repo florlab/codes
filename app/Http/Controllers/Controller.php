@@ -27,11 +27,10 @@ class Controller extends BaseController
             'file' => 'required|max:1000|mimes:doc,docx,xls,xlsx,ppt,pptx,pdf',
         ],[
             'mimes' => 'Invalid File Format',
-            'max' => 'File size must not be greater than 1MB'
+            'max' => 'File size must not be greater than 1MB',
         ]);
 
         if($request->file('file')->isValid()){
-
             try {
                 $path = public_path(). '/uploads/resume/';
                 $path = str_replace("\\","/",$path);
@@ -47,9 +46,142 @@ class Controller extends BaseController
                 Input::file('file')->move($path,$new_filename);
 
             }
-
-        }else{
-            $new_filename = 'Not Uploaded';
         }
     }
+
+    public static function aesEncrypt($data,$userid) {
+        error_reporting(0);
+        $getEncryptKey = 'qwe';
+
+        $getUserIV =$userid;
+        $encryption_key = $getEncryptKey->setting_fieldvalue;
+        $iv = $getUserIV->user_key;
+        $aesEncrypted = openssl_encrypt($data, AES_128_CBC, $encryption_key, 0, $iv);
+        return $aesEncrypted;
+    }
+
+    public static function aesDecrypt($data,$userid) {
+        error_reporting(0);
+        $getEncryptKey = 'qwe';
+        $getUserIV =$userid;
+
+        $encryption_key = $getEncryptKey->setting_fieldvalue;
+        $iv = $getUserIV->user_key;
+        $aesDecrypted = openssl_decrypt($data, AES_128_CBC, $encryption_key, 0, $iv);
+        return $aesDecrypted;
+    }
+
+    function sampleCurl($token,$data,$id){
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => "http://link",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "POST",
+            CURLOPT_POSTFIELDS => "app_secret=".urlencode($data->app_secret)."&id=".$id,
+            CURLOPT_HTTPHEADER => array(
+                "authorization: " . $token,
+                "cache-control: no-cache",
+                "content-type: application/x-www-form-urlencoded",
+                "postman-token: 775f9ee2-f0af-f2f1-afa3-7383b7e80710"
+            ),
+        ));
+
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+
+        curl_close($curl);
+
+        if ($err) {
+            return $err;
+        } else {
+            return $response;
+        }
+    }
+
+    public function randomPassword() {
+        $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789!@#$%^&*";
+        $pass = array(); //remember to declare $pass as an array
+        $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+        for ($i = 0; $i < 8; $i++) {
+            $n = rand(0, $alphaLength);
+            $pass[] = $alphabet[$n];
+        }
+        return implode($pass); //turn the array into a string
+    }
+
+    public function changePassword(Request $request) {
+        $this->validate($request, [
+            'old_password' => 'required|old_password:' . Auth::user()->password,
+            'password' => 'required|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,})/',
+            'password_confirmation' => 'required|same:password',
+        ],[
+            'old_password' => 'The old password did not match.',
+            'regex' => 'Must include a combination on alphanumeric and special characters.',
+            'same' => 'The password did not match.',
+            'required' => 'This field is required'
+        ]);
+
+        $user = User::find(Input::get('user_id_settings'));
+        $bcryptPassword = bcrypt($request->password);
+        $user->password = $bcryptPassword;
+        $user->password = $bcryptPassword;
+        $user->save();
+
+        return array(
+            'status' => 'success',
+            'module' => 'Password',
+        );
+    }
+
+    public function transLogger($Module, $Description)
+    {
+
+        if (isset($_SERVER['HTTP_CLIENT_IP']) && !empty($_SERVER['HTTP_CLIENT_IP'])) {
+            $ip = $_SERVER['HTTP_CLIENT_IP'];
+        } elseif (isset($_SERVER['HTTP_X_FORWARDED_FOR']) && !empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+            $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+        } else {
+            $ip = (isset($_SERVER['REMOTE_ADDR'])) ? $_SERVER['REMOTE_ADDR'] : '0.0.0.0';
+        }
+
+        $ip = filter_var($ip, FILTER_VALIDATE_IP);
+        $ip = ($ip === false) ? '0.0.0.0' : $ip;
+    }
+
+    public function sendEmail(){
+        try {
+            $emailData = Input::get("emailData");
+            Mail::send($emailData['emailFile'], $emailData, function($message) use ($emailData){
+                $message->from($emailData['emailFrom'], 'emailFromTest');
+                $message->to($emailData['email'])->subject($emailData['emailSubjectTest']);
+
+                if (array_key_exists('emailSendCopy', $emailData)) {
+                    if ($emailData['emailSendCopy'] != '') {
+                        $message->cc($emailData['emailSendCopy'], $emailData['emailSendCopy']);
+                    }
+                }
+            });
+        } catch(Exception $ex) {
+
+        }
+    }
+
+    public function sendEmailWithAttachment(){
+        try {
+            $emailData = Input::get("emailData");
+
+            Mail::send($emailData['emailFile'], $emailData, function($message) use ($emailData){
+                $message->from($emailData['emailFrom'], 'emailFromTest');
+                $message->to($emailData['email'])->attach($emailData['attachment'])->subject($emailData['emailSubjectTest']);
+            });
+        } catch(Exception $ex) {
+
+        }
+    }
+
 }

@@ -1,1 +1,3 @@
 http://www.codingcage.com/
+
+http://www.jqueryscript.net/demo/Smooth-Image-Enlargement-Plugin-Zoomer/
