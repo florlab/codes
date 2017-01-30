@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Republisys Rewards</title>
     <style>
         html,body{
@@ -13,7 +14,6 @@
             background: cadetblue;
         }
         .wrapper{
-            width: 1024px;
             height: 100vh;
             margin: auto;
             padding-top: 50px;
@@ -67,7 +67,11 @@
             float: left;
             background: #286090;
         }
-
+        @media screen and (min-width: 1024px){
+            .wrapper{
+                width: 1024px;
+            }
+        }
         @media screen and (max-width: 1190px) {  /*laptop*/
             .header-container{background: blue;}
         }
@@ -99,7 +103,13 @@
         @media screen and (max-width: 479px) { /* mini phone */
             .header-container{background: magenta;}
 
-
+            .left-container{
+                position: fixed;
+                height: 200px;
+            }
+            .center-container{
+                width: 100%;
+            }
         }
 
 
