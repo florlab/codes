@@ -40,6 +40,19 @@ $(".txtboxNumberOnly").keydown(function (e) {
     }
 });
 
+
+$(".txtboxNumber").keypress(function(event) {
+    if (event.charCode!=0) {
+        var regex = new RegExp("^[0-9]+$");
+        var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+
+        if (!regex.test(key)) {
+            event.preventDefault();
+            return false;
+        }
+    }
+});
+
 $('input[type=text]').bind("paste",function(e) {
     e.preventDefault();
 });
@@ -90,3 +103,87 @@ $(".txtAlphaNumericAddressZip").keypress(function(e){
     return /^[0-9 a-z-]+$/i.test(String.fromCharCode(e.charCode || e.keyCode))
         || !!(!e.charCode && ~[8,9,37,39,46].indexOf(e.keyCode));
 });
+
+$(".txtOnlyNoSymbol").keypress(function(e){
+    e = e || event;
+//            return /[a-z0-9]/i.test(String.fromCharCode(e.charCode || e.keyCode))
+    return /^[.a-z ]+$/i.test(String.fromCharCode(e.charCode || e.keyCode))
+        || !!(!e.charCode && ~[8,37,39,46,9,126].indexOf(e.keyCode));
+});
+
+$(".numberOnly").keypress(function(e){
+    e = e || event;
+
+    if($(this).val().indexOf(".") > -1)
+    {
+        return /^[0-9]+$/i.test(String.fromCharCode(e.charCode || e.keyCode))
+            || !!(!e.charCode && ~[8,9,37,39,46,9].indexOf(e.keyCode));
+    }
+    else
+    {
+        return /^[0-9.]+$/i.test(String.fromCharCode(e.charCode || e.keyCode))
+            || !!(!e.charCode && ~[8,9,37,39,46,9].indexOf(e.keyCode));
+    }
+});
+
+$(".number").keypress(function(e){
+    e = e || event;
+    return /^[0-9]+$/i.test(String.fromCharCode(e.charCode || e.keyCode))
+        || !!(!e.charCode && ~[8,9,37,39,46,9].indexOf(e.keyCode));
+
+});
+
+$(".numberOnly").on("blur", function(){
+    var num = $(this).val();
+    $(this).val(parseFloat(Math.round(num * 100) / 100).toFixed(2));
+});
+
+$(".txtAlphaNumericAddress").keypress(function(e){
+    e = e || event;
+//            return /[a-z0-9]/i.test(String.fromCharCode(e.charCode || e.keyCode))
+    return /^[#0-9, a-z.,-]+$/i.test(String.fromCharCode(e.charCode || e.keyCode))
+        || !!(!e.charCode && ~[8,9,37,39,46].indexOf(e.keyCode));
+});
+
+$(".txtAlphaNumericAddressZip").keypress(function(e){
+    e = e || event;
+//            return /[a-z0-9]/i.test(String.fromCharCode(e.charCode || e.keyCode))
+    return /^[0-9, a-z-]+$/i.test(String.fromCharCode(e.charCode || e.keyCode))
+        || !!(!e.charCode && ~[8,9,37,39,46].indexOf(e.keyCode));
+});
+
+$(".txtAlphaNumeric").keypress(function(e){
+    e = e || event;
+//            return /[a-z0-9]/i.test(String.fromCharCode(e.charCode || e.keyCode))
+    return /^[0-9, a-z-]+$/i.test(String.fromCharCode(e.charCode || e.keyCode))
+        || !!(!e.charCode && ~[8,9,37,39,46].indexOf(e.keyCode));
+});
+
+function formatNumber(num) {
+    return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
+}
+
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
+if (!isMobile.any()){
+
+}

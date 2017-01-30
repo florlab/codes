@@ -103,6 +103,164 @@ class Controller extends BaseController
         }
     }
 
+    public static function call_api($url , $action)
+    {
+        $header[] = "Accept: application/json";
+        $header[] = "Accept-Encoding: gzip";
+
+        $ch = curl_init();
+
+        $curl_config = array( CURLOPT_HTTPHEADER => $header,
+            CURLOPT_ENCODING => "gzip",
+            CURLOPT_URL => $url,
+            CURLOPT_CUSTOMREQUEST => $action,
+            CURLOPT_SSL_VERIFYPEER => false,
+            CURLOPT_SSL_VERIFYHOST => false,
+            CURLOPT_TIMEOUT => 180,
+            CURLOPT_CONNECTTIMEOUT => 60,
+            CURLOPT_RETURNTRANSFER => true);
+        curl_setopt_array($ch, $curl_config);
+
+        $curl_result = curl_exec($ch);
+        curl_close($ch);
+        return json_decode( $curl_result );
+    }
+
+    //$url_params = 'https://www.expedia.com:443/m/api/lx/trip/create';
+    /**
+     * Handles the creation of trip and checkout of Activity Only
+     * @trip_url Swagger API url of trip creation
+     * @trip_params Swagger API parameter of trip creation
+     * @checkout_url Swagger API checkout URL
+     * @user_details Information needed to checkout the trip
+     */
+    public static function get_auth_response($url_params, $params, $method){
+
+
+        $username = get_option("r8_expedia_username");
+        //The password of the account.
+        $password = get_option("r8_expedia_password");
+
+        //Set a user agent. This basically tells the server that we are using Chrome ;)
+        $user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.2309.372 Safari/537.36';
+
+        //Where our cookie information will be stored (needed for authentication).
+        $cookie_file = 'cookie.txt';
+
+        //URL of the login form.
+        $url = 'https://www.expedia.com.au/api/user/sign-in';
+
+        //Login action URL. Sometimes, this is the same URL as the login form.
+        $url_action = 'https://www.expedia.com.au/api/user/sign-in';
+
+        //An associative array that represents the required form fields.
+        //You will need to change the keys / index names to match the name of the form
+        //fields.
+        $postValues = array(
+            'email' => $username,
+            'password' => $password,
+            'staySignedIn' => true
+        );
+        //Initiate cURL.
+
+        $curl = curl_init();
+
+        //Set the URL that we want to send our POST request to. In this
+        //case, it's the action URL of the login form.
+        curl_setopt($curl, CURLOPT_URL, $url_action);
+
+        //Tell cURL that we want to carry out a POST request.
+        curl_setopt($curl, CURLOPT_POST, true);
+
+        //Set our post fields / date (from the array above).
+        curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($postValues));
+
+        //We don't want any HTTPS errors.
+        curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+
+        //Where our cookie details are saved. This is typically required
+        //for authentication, as the session ID is usually saved in the cookie file.
+        curl_setopt($curl, CURLOPT_COOKIEJAR, $cookie_file);
+
+        //Sets the user agent. Some websites will attempt to block bot user agents.
+        //Hence the reason I gave it a Chrome user agent.
+        curl_setopt($curl, CURLOPT_USERAGENT, $user_agent);
+
+        //Tells cURL to return the output once the request has been executed.
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+        //Allows us to set the referer header. In this particular case, we are
+        //fooling the server into thinking that we were referred by the login form.
+        curl_setopt($curl, CURLOPT_REFERER, $url);
+
+        //Do we want to follow any redirects?
+        curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
+
+        //Execute the login request.
+        $result = curl_exec($curl);
+        //var_dump("SIGN IN: ".$result);
+
+        //Check for errors!
+        if (curl_errno($curl)) {
+            throw new Exception(curl_error($curl));
+        }
+        /**POST METHOD
+         */
+        switch ($method){
+            case "POST":
+                curl_setopt_array($curl, array(
+                    CURLOPT_URL =>      $url_params,
+                    CURLOPT_RETURNTRANSFER => TRUE,
+                    CURLOPT_SSL_VERIFYHOST => false,
+                    CURLOPT_SSL_VERIFYPEER => false,
+                    CURLINFO_HEADER_OUT => true,
+                    CURLOPT_COOKIEJAR => $cookie_file,
+                    CURLOPT_USERAGENT => $user_agent,
+                    CURLOPT_HTTPHEADER => array(
+                        'Content-type: application/x-www-form-urlencoded'
+                    ),
+                    CURLOPT_POST => TRUE,
+                    CURLOPT_POSTFIELDS => $params
+                ));
+                break;
+            case "GET":
+                curl_setopt($curl, CURLOPT_URL, $url_params);
+                curl_setopt($curl, CURLOPT_COOKIEJAR, $cookie_file);
+                curl_setopt($curl, CURLOPT_USERAGENT, $user_agent);
+                //We don't want any HTTPS / SSL errors.
+                curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+                curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+                curl_setopt($curl, CURLINFO_HEADER_OUT, true);
+                curl_setopt($curl, CURLOPT_POST, 0);
+                break;
+
+            case "JSON":
+                curl_setopt_array($curl, array(
+                    CURLOPT_URL =>      $url_params,
+                    CURLOPT_RETURNTRANSFER => TRUE,
+                    CURLOPT_SSL_VERIFYHOST => false,
+                    CURLOPT_SSL_VERIFYPEER => false,
+                    CURLINFO_HEADER_OUT => true,
+                    CURLOPT_HTTPHEADER => array(
+                        'Content-Type: application/json'
+                    ),
+                    CURLOPT_POST => TRUE,
+                    CURLOPT_POSTFIELDS => $params
+                ));
+                break;
+        }
+
+        $response = curl_exec($curl);
+
+        if($response === FALSE){
+            die(curl_error($curl));
+        }
+//            curl_close($curl);
+        $headers =  curl_getinfo($curl, CURLINFO_HEADER_OUT );
+        return $response;
+    }
+
     public function randomPassword() {
         $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789!@#$%^&*";
         $pass = array(); //remember to declare $pass as an array
