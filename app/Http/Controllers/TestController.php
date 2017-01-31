@@ -16,4 +16,8 @@ class TestController extends Controller
     public function frontend(){
         return view('frontend');
     }
+
+    public function angular(){
+        return view('angular');
+    }
 }

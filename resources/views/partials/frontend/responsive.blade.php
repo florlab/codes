@@ -3,8 +3,9 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Republisys Rewards</title>
+    <link rel="stylesheet" href="{{ url('/css/responsive.css') }}">
     <style>
-        html,body{
+        /*html,body{
             margin: 0;
         }
         .header-container{
@@ -72,10 +73,10 @@
                 width: 1024px;
             }
         }
-        @media screen and (max-width: 1190px) {  /*laptop*/
+        @media screen and (max-width: 1190px) {  *//*laptop*//*
             .header-container{background: blue;}
         }
-        @media screen and (max-width: 980px) { /* pad */
+        @media screen and (max-width: 980px) { *//* pad *//*
             .header-container{background: violet;}
 
             .center-container{
@@ -91,7 +92,7 @@
         @media screen and (max-width: 800px) and (min-width: 750px){
             .header-container{background: orange;}
         }
-        @media screen and (max-width:767px){ /* phone */
+        @media screen and (max-width:767px){ *//* phone *//*
             .header-container{background: brown;}
         }
         @media screen and (max-width: 749px) and (min-width: 700px){
@@ -100,7 +101,7 @@
         @media screen and (max-width: 500px){
             .header-container{background: lime;}
         }
-        @media screen and (max-width: 479px) { /* mini phone */
+        @media screen and (max-width: 479px) { *//* mini phone *//*
             .header-container{background: magenta;}
 
             .left-container{
@@ -110,7 +111,7 @@
             .center-container{
                 width: 100%;
             }
-        }
+        }*/
 
 
 

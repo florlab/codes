@@ -12,6 +12,7 @@ Route::group(['middleware' => 'language'], function(){
     Route::match(array('GET'), 'frontend','TestController@frontend');
 
     Route::match(array('GET'), 'service-container','TestController@service_container');
+    Route::match(array('GET'), 'angular','TestController@angular');
 });
 
 

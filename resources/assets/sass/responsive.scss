@@ -1,0 +1,126 @@
+html,body{
+  margin: 0;
+}
+.header-container{
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background: cadetblue;
+
+  @media screen and (max-width: 1190px) {  /*laptop*/
+    background: blue;
+  }
+
+  @media screen and (max-width: 980px) { /* pad */
+    background: violet;
+  }
+
+  @media screen and (max-width:960px){
+    background: green;
+  }
+
+  @media screen and (max-width: 800px) and (min-width: 750px){
+    background: orange;
+  }
+
+  @media screen and (max-width:767px){ /* phone */
+    background: brown;
+  }
+
+  @media screen and (max-width: 749px) and (min-width: 700px){
+    background: lightblue;
+  }
+
+  @media screen and (max-width: 500px){
+    background: lime;
+  }
+
+  @media screen and (max-width: 479px) { /* mini phone */
+    background: magenta;
+  }
+}
+
+.wrapper{
+  height: 100vh;
+  margin: auto;
+  padding-top: 50px;
+
+  @media screen and (min-width: 1024px){
+      width: 1024px;
+  }
+
+  .left-container{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: #009998;
+
+    @media screen and (max-width: 479px) { /* mini phone */
+      position: fixed;
+      height: 200px;
+    }
+
+    .login-form{
+      width: 80%;
+      margin: auto;
+      margin-top: 20px;
+
+      form input{
+        width: 100%;
+      }
+    }
+  }
+
+  .center-container{
+    width: 60%;
+    height: 100%;
+    float: left;
+    background: #20895e;
+
+    @media screen and (max-width: 980px) { /* pad */
+      width: 75%;
+    }
+    @media screen and (max-width: 479px) { /* mini phone */
+      width: 100%;
+    }
+
+    .center-inner-container{
+      padding: 20px;
+    }
+
+    .slider{
+      width: 100%;
+      height: 400px;
+      background: #245269;
+    }
+
+    .information{
+      margin-top: 20px;
+
+      .background-information{
+        width: 60%;
+        float: left;
+        height: 200px;
+        background: #3d6983;
+      }
+
+      .other-information{
+        width: 40%;
+        float: left;
+        height: 200px;
+        background: #c7ddef;
+      }
+    }
+  }
+
+  .right-container{
+    width: 15%;
+    height: 100%;
+    float: left;
+    background: #286090;
+
+    @media screen and (max-width: 980px) { /* pad */
+      width: 100%;
+    }
+  }
+}
