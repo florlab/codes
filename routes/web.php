@@ -12,8 +12,13 @@ Route::group(['middleware' => 'language'], function(){
     Route::match(array('GET'), 'frontend','TestController@frontend');
 
     Route::match(array('GET'), 'service-container','TestController@service_container');
-    Route::match(array('GET'), 'angular','TestController@angular');
+
 });
 
+Route::match(array('GET'), 'angular','Employees@angular');
+Route::get('/api/v1/employees/{id?}', 'Employees@index');
+Route::post('/api/v1/employees', 'Employees@store');
+Route::post('/api/v1/employees/{id}', 'Employees@update');
+Route::delete('/api/v1/employees/{id}', 'Employees@destroy');
 
 
