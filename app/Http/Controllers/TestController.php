@@ -18,6 +18,10 @@ class TestController extends Controller
         return view('frontend');
     }
 
+    public function template(){
+        return view('template');
+    }
+
     public function cart(Request $request){
         $data = $request->session()->all();
         return view('cart',array(

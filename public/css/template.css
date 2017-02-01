@@ -1,0 +1,94 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #231f20;
+    margin: 0;
+}
+
+.flo-btn{
+    cursor: pointer;
+    outline: 0;
+    color: #FFF;
+    font: inherit;
+    line-height: 1.3;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    -webkit-appearance: none;
+    transition: all .3s ease;
+}
+
+.flo-btn.green{
+    border: 1px solid #91ff24;
+}
+.flo-btn.green:hover{
+    background-color: #91ff24;
+}
+.flo-btn.orange{
+    border: 1px solid #ff6038;
+}
+.flo-btn.orange:hover{
+    background-color: #ff6038;
+}
+.flo-btn.yellow{
+    border: 1px solid #ffcb00;
+}
+.flo-btn.yellow:hover{
+    background-color: #ffcb00;
+}
+.flo-btn.pink{
+    border: 1px solid #ff375c;
+}
+.flo-btn.pink:hover{
+    background-color: #ff375c;
+}
+
+
+.flo-nav{
+    background-color: rgba(0,0,0,.25);
+    position: relative;
+    height: 60px;
+    line-height: 1;
+    cursor: default;
+}
+.flo-menu-container{
+    position: absolute;
+    width: 100%;
+    top: 25px;
+    text-align: center;
+}
+.flo-nav .flo-primary-menu{
+    margin: 0;
+    padding: 0;
+}
+.flo-nav .flo-primary-menu li{
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid transparent;
+    margin-right: 20px;
+    transition: all .2s linear;
+}
+.flo-nav .flo-primary-menu li a{
+    color: #FFF;
+    font-size: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.flo-nav .flo-primary-menu.green li:hover{
+    border-bottom: 1px solid #91ff24;
+}
+.flo-nav .flo-primary-menu.orange li:hover{
+    border-bottom: 1px solid #ff6038;
+}
+.flo-nav .flo-primary-menu.yellow li:hover{
+    border-bottom: 1px solid #ffcb00;
+}
+.flo-nav .flo-primary-menu.pink li:hover{
+    border-bottom: 1px solid #ff375c;
+}

@@ -15,6 +15,9 @@ Route::group(['middleware' => 'language'], function(){
     Route::match(array('GET'), 'cart','TestController@cart');
     Route::match(array('POST'), 'addToCart','TestController@addToCart');
 
+
+    Route::match(array('GET'), 'template','TestController@template');
+
 });
 
 Route::match(array('GET'), 'angular','Employees@angular');
