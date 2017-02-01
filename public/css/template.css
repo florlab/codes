@@ -92,3 +92,36 @@ body{
 .flo-nav .flo-primary-menu.pink li:hover{
     border-bottom: 1px solid #ff375c;
 }
+
+.label-white{
+    color:#ffffff;
+}
+.label-green{
+    color:#91ff24;
+}
+.label-orange{
+    color:#ff6038;
+}
+.label-yellow{
+    color:#ffcb00;
+}
+.label-pink{
+    color:#ff375c;
+}
+
+.flo-section h2{
+    font-size: 60px;
+}
+
+.flo-section{
+    max-width: 850px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.flo-section .flo-column{
+    float: left;
+    width: 33.33333333333333%;
+}
+.flo-section .flo-column p{
+    color:#ffffff;
+}
