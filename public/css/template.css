@@ -9,6 +9,7 @@ body{
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1;
 }
 
 .title-flowt{
@@ -139,11 +140,12 @@ body{
 
 .flo-container{
     background-color: rgba(0, 0, 0, 0.25);
+    position: relative;
 }
 .flo-section{
     max-width: 850px;
-    padding: 0 20px;
     margin: 0 auto;
+    padding: 20px;
 }
 .flo-section.two-column .flo-column{
     width: 100%;
@@ -170,6 +172,13 @@ body{
     margin-bottom: 10px;
     width: 100%;
 }
+.flo-select{
+    width: 100%;
+    padding: 15px 20px;
+    outline: 0;
+}
+
+
 .blur{
     webkit-filter: blur(3px);
     -moz-filter: blur(3px);

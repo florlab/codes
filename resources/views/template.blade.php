@@ -15,12 +15,6 @@
     </nav>
 </header>
 
-<button class="flo-btn green">Submit</button>
-<button class="flo-btn orange">Submit</button>
-<button class="flo-btn yellow">Submit</button>
-<button class="flo-btn pink">Submit</button>
-
-
 <div style="background: url('https://awal.com/wp-content/uploads/2016/03/thom_yorke.jpg') center center / cover no-repeat fixed">
     <div class="flo-container">
         <section class="flo-section">
@@ -28,6 +22,15 @@
             <h2 class="label-white">Neque porro quisquam est qui dolorem ipsum quia dolor sit...</h2>
         </section>
     </div>
+</div>
+
+<div class="flo-container">
+    <section class="flo-section">
+        <button class="flo-btn green">Submit</button>
+        <button class="flo-btn orange">Submit</button>
+        <button class="flo-btn yellow">Submit</button>
+        <button class="flo-btn pink">Submit</button>
+    </section>
 </div>
 
 <div class="flo-container">
@@ -75,13 +78,15 @@
                 <input type="text" class="flo-input" placeholder="First Name">
                 <input type="text" class="flo-input" placeholder="Last Name">
                 <input type="email" class="flo-input" placeholder="Email">
-
+                <select class="flo-select">
+                    <option>ALL</option>
+                    <option>Sample</option>
+                </select>
                 <input class="flo-btn green" type="submit" value="Apply">
             </form>
         </div>
     </section>
 </div>
-
 
 <div class="title-flowt">FLORENCE</div>
 
