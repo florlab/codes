@@ -17,11 +17,12 @@ Route::group(['middleware' => 'language'], function(){
     Route::match(array('POST'), 'addToCart','TestController@addToCart');
     Route::match(array('GET'), 'removeToCart/{key}','TestController@removeToCart');
 
-
     Route::match(array('GET'), 'template','TestController@template');
 
     Route::match(array('GET'), 'form','TestController@form');
     Route::match(array('POST'), 'uploadIt','TestController@uploadIt');
+
+    Route::match(array('POST'), 'ckeditor','TestController@ckeditor');
 
 });
 
