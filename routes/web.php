@@ -14,6 +14,7 @@ Route::group(['middleware' => 'language'], function(){
     Route::match(array('GET'), 'service-container','TestController@service_container');
     Route::match(array('GET'), 'cart','TestController@cart');
     Route::match(array('POST'), 'addToCart','TestController@addToCart');
+    Route::match(array('GET'), 'removeToCart/{key}','TestController@removeToCart');
 
 
     Route::match(array('GET'), 'template','TestController@template');
