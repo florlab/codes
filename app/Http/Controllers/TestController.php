@@ -53,4 +53,12 @@ class TestController extends Controller
 
         return Redirect::to('cart');
     }
+
+    public function form(){
+        return view('form');
+    }
+
+    public function uploadIt(Request $request, AppSecurity $controller){
+        return $controller->uploadFile($request);
+    }
 }
