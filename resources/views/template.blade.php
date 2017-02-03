@@ -50,6 +50,7 @@
             <h4 class="label-yellow">Lorem Ipsum</h4>
             <p>is simply dummy text of the printing and typesetting industry.</p>
         </div>
+        <div style="clear: both"></div>
     </section>
 </div>
 
@@ -57,8 +58,10 @@
     <div class="flo-container">
         <section class="flo-section one-column">
             <div class="flo-column">
-                <h1 class="label-orange">Dolorem Ipsum Quia Dlor</h1>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <div class="flo-border">
+                    <h1 class="label-orange">Dolorem Ipsum Quia Dlor</h1>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
             </div>
         </section>
     </div>

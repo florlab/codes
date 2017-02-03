@@ -16,6 +16,10 @@ class TestController extends Controller
         return view('jquery-validate');
     }
 
+    public function fullpage(){
+        return view('fullpage');
+    }
+
     public function frontend(){
         return view('frontend');
     }
