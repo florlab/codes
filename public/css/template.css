@@ -129,6 +129,9 @@ body{
 .flo-label.pink{
     color:#ff375c;
 }
+.flo-label.beige{
+    color:#c59595;
+}
 
 .flo-section h1{
     font-size: 115px;
@@ -198,7 +201,20 @@ body{
     padding: 15px 20px;
     outline: 0;
 }
-
+.flo-icon{
+    display: block;
+    margin: auto;
+}
+.flo-panel{
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+    cursor: pointer;
+}
+.flo-panel.dark{
+    background: rgba(14, 14, 14, 0.38);
+    color: #ffffff;
+}
 
 .blur{
     webkit-filter: blur(3px);
@@ -207,12 +223,56 @@ body{
     -ms-filter: blur(3px);
     filter: blur(3px);
 }
-.modal-backdrop{
+/*.modal-backdrop{
     z-index: 1009;
 }
 .modal-backdrop.fade{
     opacity: 0;
-}
-.modal-open{
+}*/
+/*.modal-open{
     padding: 0 !important;
+}*/
+.modal{
+    background: rgba(230, 225, 225, 0.61);
+
+    border: 1px solid rgba(191, 179, 179, 0.5);
+    -webkit-box-shadow: 0 3px 9px rgba(191, 179, 179, 0.5);
+    box-shadow: 0 3px 9px rgba(191, 179, 179, 0.5);
+}
+.modal-content{
+    box-shadow: none;
+    border: 0;
+    min-height: 200px;
+}
+.circlese {
+    border-radius: 0 41% 55% 0;
+    height: 113%;
+    margin-top: -56px;
+    overflow: hidden;
+    width: 50%;
+    float: left;
+    border-right: 1px solid #1178c1;
+}
+
+.aboutLeftContainer {
+    background-color: #fafafa;
+    border-bottom-right-radius: 49%;
+    border-top-right-radius: 52%;
+    display: table;
+    float: left;
+    height: 119%;
+    margin-top: -57px;
+    padding-left: 10%;
+    width: 56%;
+    z-index: 1;
+}
+
+.about-us-create-section .aboutRightContainer {
+    background: rgba(0, 0, 0, 0) url(../../images/about/AboutUs-Create.jpg) no-repeat;
+    height: 100%;
+    position: absolute;
+    width: 61%;
+    z-index: -1;
+    right: 0;
+    background-size: 100% 100%;
 }

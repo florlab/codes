@@ -11,7 +11,8 @@
 
     <link rel="stylesheet" type="text/css" href="{{ url('css/jquery.fullPage.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ url('css/bootstrap-modal.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ url('css/bootstrap-theme-modal.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url('css/bootstrap-modal-bs3patch.css') }}" />
+    <!--<link rel="stylesheet" type="text/css" href="{{ url('css/bootstrap-theme-modal.css') }}" />-->
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>-->
@@ -19,22 +20,23 @@
     <script type="text/javascript" src="{{ url('js/scrolloverflow.js') }}"></script>
     <script type="text/javascript" src="{{ url('js/jquery.fullPage.js') }}"></script>
     <script type="text/javascript" src="{{ url('js/bootstrap-modal.js') }}"></script>
+    <script type="text/javascript" src="{{ url('js/bootstrap-modalmanager.js') }}"></script>
 
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 menu: '#menu',
                 anchors: ['about', 'service', 'portfolio', 'contact'],
-                sectionsColor: ['', '#ff6038', '', '#ff375c'],
+                sectionsColor: ['', '', '#ffffff', ''],
                 autoScrolling: false
             });
 
-            $('#myModalService').on('shown.bs.modal', function (e) {
+            $('.modal').on('shown.bs.modal', function (e) {
                 $('#fullpage').addClass('blur');
-            })
-            $('#myModalService').on('hidden.bs.modal', function (e) {
+            });
+            $('.modal').on('hidden.bs.modal', function (e) {
                 $('#fullpage').removeClass('blur');
-            })
+            });
         });
     </script>
 
@@ -76,20 +78,20 @@
         <div class="flo-container">
             <section class="flo-section one-column">
                 <div class="flo-column">
-                    <p class="text-left">Start your ideas by us and make it simple with amazing outputs.</p>
+                    <p class="text-left">Start your ideas by Flow and make it simple with amazing outputs.</p>
                 </div>
             </section>
             <section class="flo-section two-columns">
                 <div class="flo-column">
-                    <div data-toggle="modal" data-target="#myModalService">
-                        <img src="{{ url('/img/icon-laravel.svg') }}" width="100">
-                        <h3 class="flo-label white">Website Development</h3>
+                    <div class="flo-panel dark" data-toggle="modal" data-target="#myModalService-website">
+                        <img class="flo-icon" src="{{ url('/img/icon-laravel.svg') }}" height="100">
+                        <h3 class="flo-label white flo-center">Website Development</h3>
                     </div>
                 </div>
                 <div class="flo-column">
-                    <div data-toggle="modal" data-target="#myModalService">
-                        <img src="{{ url('/img/icon-android.svg') }}" width="100">
-                        <h3 class="flo-label white">Mobile Apps</h3>
+                    <div class="flo-panel dark" data-toggle="modal" data-target="#myModalService-android">
+                        <img class="flo-icon" src="{{ url('/img/icon-android.svg') }}" height="100">
+                        <h3 class="flo-label white flo-center">Mobile Apps</h3>
                     </div>
                 </div>
             </section>
@@ -98,15 +100,27 @@
     <div class="section" id="section2">
         <div class="slide" id="slide1">
 
+            <div>
+                <div class="aboutLeftContainer">
+                    a
+                </div>
+            <div class="aboutRightContainer">
+                    b
+                </div>
+            </div>
         </div>
-
         <div class="slide" id="slide2">
-            <h1>Horizontal sliders!</h1>
-            <img src="imgs/iphone-blue.png" alt="iphone" id="iphone-two" />
+
         </div>
     </div>
-    <div class="section" id="section3">
-
+    <div class="section" id="section3" style="background: url('/img/contact-bg.jpeg') center center / cover no-repeat fixed">
+        <div class="flo-container">
+            <section class="flo-section one-column">
+                <div class="flo-column">
+                    <h2 class="flo-label white"><strong class="flo-label beige">Email me @ </strong>florence.vill@icloud.com</h2>
+                </div>
+            </section>
+        </div>
     </div>
 </div>
 
@@ -115,20 +129,20 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="myModalService" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="myModalService-website" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+            <h3>Laravel (PHP framework)</h3>
+            <p>Flow love OpenSource, starting from small, medium to scalable website are ease of pain with Laravel.</p>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModalService-android" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <h3>Android</h3>
+            <p>Soon to deliver...</p>
         </div>
     </div>
 </div>
