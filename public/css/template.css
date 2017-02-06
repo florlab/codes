@@ -38,8 +38,12 @@ body{
     text-align: center;
     display: block;
     margin: auto;
+    text-decoration: none !important;
+    width: 250px;
 }
-
+.flo-btn:hover{
+    color: #ffffff;
+}
 .flo-btn.green{
     border: 2px solid #91ff24;
 }
@@ -110,19 +114,19 @@ body{
     border-bottom: 1px solid #ff375c;
 }
 
-.label-white{
+.flo-label.white{
     color:#ffffff;
 }
-.label-green{
+.flo-label.green{
     color:#91ff24;
 }
-.label-orange{
+.flo-label.orange{
     color:#ff6038;
 }
-.label-yellow{
+.flo-label.yellow{
     color:#ffcb00;
 }
-.label-pink{
+.flo-label.pink{
     color:#ff375c;
 }
 
@@ -136,9 +140,11 @@ body{
     margin: 0;
 }
 .flo-section h3{
+    font-size: 30px;
     margin: 0;
 }
 .flo-section h4{
+    font-size: 25px;
     margin: 0;
 }
 
@@ -173,7 +179,10 @@ body{
 .flo-section .flo-column p{
     color:#ffffff;
 }
-.flo-section.one-column p{
+/*.flo-section.one-column p{
+    text-align: center;
+}*/
+.flo-center{
     text-align: center;
 }
 
@@ -197,4 +206,13 @@ body{
     -o-filter: blur(3px);
     -ms-filter: blur(3px);
     filter: blur(3px);
+}
+.modal-backdrop{
+    z-index: 1009;
+}
+.modal-backdrop.fade{
+    opacity: 0;
+}
+.modal-open{
+    padding: 0 !important;
 }

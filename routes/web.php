@@ -19,12 +19,12 @@ Route::group(['middleware' => 'language'], function(){
 
     Route::match(array('GET'), 'template','TestController@template');
 
-
+    Route::match(array('GET'), 'realtime','TestController@realtime');
 
     Route::match(array('GET'), 'form','TestController@form');
     Route::match(array('POST'), 'uploadIt','TestController@uploadIt');
     Route::match(array('GET'), 'cart','TestController@cart');
-    Route::match(array('POST'), 'ckeditor','TestController@ckeditor');
+    Route::match(array('GET'), 'ckeditor','TestController@ckeditor');
 
 
     Route::match(array('GET'), 'fullpage','TestController@fullpage');

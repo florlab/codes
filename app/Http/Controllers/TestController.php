@@ -20,6 +20,14 @@ class TestController extends Controller
         return view('fullpage');
     }
 
+    public function realtime(){
+        return view('realtime');
+    }
+
+    public function ckeditor(){
+        return view('ckeditor');
+    }
+
     public function frontend(){
         return view('frontend');
     }
