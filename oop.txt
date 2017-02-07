@@ -1,0 +1,3 @@
+Encapsulation referred to as data hiding.
+Visibility like public, private, protected
+

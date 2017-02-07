@@ -32,7 +32,6 @@ class Controller extends BaseController
         ]);
 
         if($request->file('file')->isValid()){
-
             try {
                 $path = public_path(). '/uploads/';
                 $path = str_replace("\\","/",$path);
