@@ -1,3 +1,5 @@
+OOP is a paradigm or pattern that provides the concepts of encapsulation, polymorphism, inheritance and abstraction
+
 Encapsulation referred to as data hiding.
 Visibility like public, private, protected
 

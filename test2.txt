@@ -1,0 +1,300 @@
+I see, there’s some gap in your work history. Why?
+
+Yes, I was feeling exhausted after years of non-stop work. So, I decided to take a break and spend some time with my family on a rejuvenating vacation. I am happy to have returned fully recharged.
+Can you tell us something about your previous boss?
+
+All my bosses possessed some skills worth learning. I have always tried to learn something new from them including my previous boss.
+Is there anything that you do not like about your last or current job?
+
+I was quite enthusiastic while joining my last job. Towards the end, the number of challenges and opportunity to grow further started diminishing. A challenge loving and growth oriented person like me doesn’t enjoy this.
+Have there been instances, when your decision was challenged by your colleague or manager?
+
+Yes, there have been many such instances. I like people who challenge my decisions rather than following me blindly. This keeps me ensured that I am surrounded by thinking brains rather than just a set of dumb followers.
+
+When someone challenges your decisions, you are bound to rethink over it and the chances of reaching the best option are brighter.
+If you are allowed to change one thing about your last job, what would it be?
+
+I have been working at a senior level since last many years. These roles have always needed me to make real time decisions. Sometimes the facts, figures and other information in real time cases are not complete & still we have to make a decision. In such cases, there exists a probability of making inaccurate decisions.
+
+Knowing this, I usually run down my old decisions to see the outcome. It makes sure that I don’t repeat a mistake ever again in future. While carrying out one such exercise, I realised that the product promotion strategy that I recommended would have been different, if I had had the complete data and figures but there was no way to get them in real time.
+How long can you commit to work with us?
+
+I like new challenges and a chance to grow. As long I keeping getting these, I don’t think I’ll need to switch over. I’d like to believe that this relationship lasts for many years. However, I haven’t set a time limit as such.
+You seem to be drawing a good salary. Will you be OK in taking a salary cut?
+
+I believe that at one point of time in career salary becomes secondary and self actualisation become more important. While taking up any new job, it will be my priority to ensure that the work culture, chances to contribute and grow are sufficient along with the money I am paid. I also believe that any good company who cares about its employees ensures that they are paid well.
+What is your expected salary?
+
+I believe that an ideal remuneration for any position recognizes the ability, rewards the performance and provides the employee an opportunity to indulge in his hobbies and passions. I am sure that this company also takes care of these.
+Would you like to ask us anything?
+
+I would like to know about the career growth I can expect being with this company. I am quite an ambitious person and this information will be helpful.
+Tell us something about yourself.
+
+This is the first question, you can expect during any interview you face. This usually is a question to start the communication and set the ball rolling for the interview. You can answer this question by providing some information about your work experience, technologies you have worked upon, educational qualifications. If you are a fresh graduate, you can provide some information about your family also.
+
+The trick is to put the full stop at the right place to provoke the next question you want. For e.g. “Recently I developed a website using Drupal. It was quite an interesting but challenging job which I enjoyed.”
+Why do you consider yourself a suitable candidate for this position?
+
+The answer to this question lies in the preparation you did before the interview. It is extremely important that you research the requirements of the position well and match them with your skills.
+
+For e.g. if the position requires an Asp.net developer with good knowledge of health care domain, tell the interviewer about your technical skills and your domain knowledge.
+
+Fresh graduates can talk about their technical skills, ability to learn and grasp things quickly.
+Why do you want to leave your present job or company?
+
+You may want to leave your present job for any reason but make sure that you do not talk bad about your manager, company or job. It reflects your complaining attitude.
+
+Provide a sincere reason for e.g. “I think, I have grown up with my last employer as much as I could. I want to grow further and I believe that is possible with a new employer.”
+You have stayed in your current job for quite a long time, why?
+
+There are many people who do not change their jobs for years and when they go out looking for a new employer, this is one of the most important questions they are asked. Some people might look upon staying with the same employer for long as “lack of ambition”.
+
+A good answer to this question can be something like, “Yes, you are right. I stayed with my last employer for almost 5 years but I was continuously growing in the company, doing new things, handling bigger challenges. So, I was quite happy working with them for these many years.” You can then talk about how you grew with your last employer.
+What do you know about us?
+
+Research the company and its business a bit before appearing for the interview. Also, find out a bit about the technologies they work upon. You don’t need to know everything inside out but having a fair idea about the company makes you appear interested in the position, to be taken seriously.
+
+For e.g. I see that your company does a lot of projects based on OpenSource platforms like Joomla, Drupal, Magento which is quite interesting as I have a similar kind of experience.
+What do you do to improve your knowledge?
+
+The field of IT is very revolutionary. It is extremely important to keep yourself abreast with the new technological developments and this needs you to take some time out of your work schedule so that you can keep sharpening your saw.
+
+To answer this question, you can tell the recruiter about the forums which you keep visiting, blogs which you keep reading. It will be an advantage if you are a member of some local user group.
+Can you perform under pressure?
+
+Most of the times, the job of software development is that of working under pressure. Sometimes, it will be the pressure of delivering on time while it can be that of a bug that has sprung all of a sudden in your code.
+
+So, expect pressure in everything you do. It is important to maintain your performance and develop strategies to deliver under pressure. You can then go ahead an talk about your way of dealing with pressure and performing under it.
+Tell us some of your strengths.
+
+Again, it is important to study the requirements of the position before you appear for the interview. List out your strengths and offer the ones that this role demands.
+
+For e.g. If you are appearing for the position of a Tech Lead – VB.net, talk about your VB.net skills, any extra knowledge which you have about coding with VB.net in comparison to other candidates, your team management skills etc.
+Tell us some of your weaknesses.
+
+You have to be careful while answering this question. Do not offer a weakness which will directly affect your selection but at the same time saying that you do not have any weakness will not be right too. Every human being has weaknesses, so it is perfectly OK for you to have some too.
+
+The best way to answer this question will be to turn one of your strengths as a weakness and say that others accuse you of having this weakness but you think it is important to work in this manner. For e.g.: “My colleagues accuse me of paying to much attention to syntax but I believe it is important when you are writing the code to avoid spending too much time on finding and fixing the bugs later on.”
+
+Another way to answer this question is to offer a totally un-related weakness for e.g. “I have been staying alone for so many years now but I still can’t cook independently.”
+Are you comfortable working in a team?
+
+The whole work of software development or IT is a team work. So, the only answer to this question can be: “Yes, I am comfortable working in a team.” If you have any problems in working as a team, it is important to work on them and develop yourself as a team player.
+How do you rate your communication skills?
+
+Again, IT is about dealing with people within and out of the company. So, it is important to have good communication skills. By good communication skills we mean, ability to understand and explain in a common language. So, if you believe that your communication skills are weaker, you need to work on them.
+
+Anything less than average or good is not acceptable here.
+You do not have all the experience we need for this position?
+
+It is not possible for a candidate to have all the experience an employer requires. Even if you match yourself up to the expectations on technical front, there will be some difference in the work environment. And, it is absolutely fine.
+
+The best way to deal with this question is to analyse the requirements of the position well and match your skills as close to them as possible. If something is still left untouched, offer your quick grasping power and ability to learn quickly as a solution & back it up with an example from the past.
+How would you compensate for the lack of experience you have for this position?
+
+As we discussed in the last question, your ability to understand and pick up new things quickly should be able to compensate for the lack of work experience you have.
+If you were hiring for this position, what qualities would you look for in a potential candidate?
+
+Closely understand the qualities and skills a person holding the position would need and match them with the qualities you have.
+
+If you believe that you are missing a big quality required for the position under discussion, say that, “I understand that this is an important quality required in the person holding this position but given a chance, I will inculcate it in me.” Back it up with a confident body language.
+Do you know anyone who works for us?
+
+Offer some one’s name if they really know you well and can offer a positive feedback about you.
+What is your style of management?
+
+In today’s scenario, everything needs customization, so here also, one size can’t fit all i.e. one management style won’t work in all situations. So, offer “situational” as your style of management.
+Have you ever fired anyone? How would you go about firing a person, if required?
+
+The basic purpose of asking this question is to check your EQ and see if you have the guts to make tough decisions. If you have fired anyone in the past, discuss your experience and approach. If you have never done so in the past, discuss the approach you would take to make and implement such a decision. Keep the focus of your answer on the fact that you would try to do your best to ensure that your team performs to its best but if a particular member is not able to perform even after you taking all the steps to help him, you would make the tough decision to ensure that the project doesn’t suffer.
+What irritates you about co-workers?
+
+The purpose of this question is to see how well you can fit into a team. Basically, you should not have a problem with a person, although you can have a problem with the style of working.
+
+So, to answer this question you can simply say, “I understand that IT is about team work, so we can’t afford to problems with co-workers but if someone is not serious about their work or does a low quality work affecting the whole project, I definitely do not like it”
+Is there any particular kind of person you can not work with?
+
+For the reason given in the above questions, the answer to this question should be a “No”. This is basically a different way of putting up the last question.
+What qualities would you look for in your senior?
+
+You can mention some generic qualities like intelligence, good sense of humour, dedicated to his team etc., which all the managers think that they have in abundance.
+What motivates you at work?
+
+To answer this question, you can mention things like – new challenges, good environment which all employers think that they offer.
+Will you be happy to work in night shifts or over the weekends?
+
+You need to answer this question taking into consideration what is suitable for you. Say that you can work in the night shifts, only if you can really do it.
+Have you ever committed a mistake at work?
+
+To err is human. So, it is perfectly OK if you committed a mistake at work but before answering the question analyse the magnitude of mistake you did and the effect it had on the company.
+
+What is more important is – what did you do to rectify the mistake and make sure that you don’t do it again?
+
+So, mention the mistake you committed and keep the focus of the answer on the steps you took to rectify it.
+What position would you prefer while working on a project?
+
+This question is for you to answer based on the skills and qualities you have. If you have the capability to handle different positions, discuss that also in the interview.
+What are the most important things for you as a manager?
+
+The two things which should be most important for a manager to succeed in his role are:
+
+a.) His team should be happy and keep performing
+b.) The project he is working on with his team is successfully finished with minimum problems.
+Will you be happy to re-locate, if required?
+
+Again, a question for you to answer based on your position. If you are anticipating this question in the interview, it is better to discuss this with your family also before you go to face the interview.
+What kind of a salary are you looking for?
+
+Try to put the ball back in interviewer’s court by asking him about the salary they offer for a position like this. Most of the big companies will have a fixed remuneration for each level.
+
+However, if this is negotiable, you will have more negotiation power if you have some work experience. So, know your lower limit (amount below which you can’t go) and also know the maximum salary in the industry for the position then put forward a figure which is not very exact. It is better to mention a range. For e.g. if you are expecting something around 55 K, say that you expect something in mid fifties. Don’t keep the range to broad otherwise you will be offered something towards the lower end.
+
+If you are a fresher, most of the times you will have to accept the company’s offering for the position. However, if you find it too less, you can definitely discuss that during the interview.
+Do you have any questions for us?
+
+This is usually the last question you can expect during an interview. It is extremely important to have some intelligent questions to ask the interviewer otherwise you may just sound dull and un-interested. Research the company a bit and discuss if they have been in news recently. You can also discuss about the growth prospects for you within the company etc.
+Discuss the most stressful situation you came across in your previous job.
+
+Here you should discuss a stressful situation that you were able to overcome and keep a positive tone, do not say you never came across a stressful situation. Typical answers can be:
+
+- Our team’s targets were increased three fold and initially everyone was overwhelmed by the number, but we discussed it with our manager and he was co-operative and understood the situation. But he wanted us to give it a try and was ready to reduce the targets to a more realistic number.
+
+- You can also talk about a very demanding project where you worked for long hours/2 shifts and had to sacrifice on family time, but once the project was done you got recognition for the hard work and you were over the stress.
+For how long do you expect to stay with our organization?
+
+You should ensure that you give an impression that you will pay back more than what you take from the company:
+
+- You can say I will stay here as far as I see an opportunity for growth, as I am looking for a stability in work place
+- If they stress on number of years say 3-4 years, and more if I can explore new challenges/growth opportunities
+Why should we hire you?
+
+- Here you should discuss the profile you have applied for and your strengths/experience with which you can add value to the job
+
+- Discuss your achievements at your previous job, and say that I have developed my skills to suit my current profile, but I want to develop myself futher and face new challenges, and for that I need to change my job.
+
+- I will always be willing to change roles share responsibilities to suit company requirements
+Discuss your strengths
+
+Discuss strengths that show your professional expertise, some of the answers could be:
+
+- Multi tasking: Say I have been working on mulitple project and I am required to keep tabs on each project and co-ordinate with a lot of teams, and I am able to do it efficiently.
+- Problem Solving: You can say that in my current job role I have spent a good time to know how to solve problems. My team members see me as a go-to person to solve issues.
+- Communication
+- Team player
+- Quick learner
+
+Support each point with examples
+Discuss your weaknesses and how do you plan to overcome it
+
+Discuss weaknesses in positive light always discuss how you plan to overcome it, some of the answers could be:
+
+- I am always willing to take up additional responsibilities, but I end up being over worked so now I am realistic about what I can do, so that I do work to the required standards
+
+- If you lack certain technical skill, which is not crucial for the job you can state that and say you are planning to take up a training course/certification to get over it
+
+- If you do not wish to discuss your weakness, you can say, I cannot compete with Rajnikant :P
+What is your idea of an ideal company?
+
+Do not go over board and ask for , it might give an impression that you are too demanding, some of the answers could be:
+
+- An ideal company provides maximum opportunities for growth of employees.
+- They provide comfortable and flexible work environment, so that employees can perform at their best and work towards company’s benefit.
+- A company that encourages learning
+- A company that encourages open culture
+Why are you leaving your previous job?
+
+Do not go around defaming your company, it will give a bad impression about you.
+
+Give reasons such as:
+
+- Professional Growth
+- New challenges
+- Change in profile
+- Planning to relocate (if applicable)
+- With time I found my job was becoming monotonous and I didn’t want this to have any impact on the job I was doing for my employer
+- I am not actively looking for a job change but, I saw this opening and it looked interesting.
+Tell us something about your achievements at your previous job.
+
+- Talk about your professional acheivements, if you were recognised as a high performer or you got good feedback from your manager
+- You can also discuss you annual ratings
+- Discuss your promotions/appraisals
+Tell us what do you know about our company.
+
+- Browse through the company website and make sure you know what the company does and make sure you do so in short
+- Discuss the positives aspects of the company, the interviewer should feel that you have done your home work
+Why do you want to work for us?
+
+-Start by discussing the profile you have applied for and go on to say that the organization would provide an opportunity to enhance your knowledge and help you to grow professionally
+
+-Discuss how you would be of use to the organization and how you plan to develop your professional competencies
+Are you willing to relocate/travel?
+
+- Always say yes if you need the job
+
+- You can ask whether they will compensate for relocation costs
+Are you a good team player?
+
+Companies look for team players as well as those who are self starters and can work independently, so you need to be versatile:
+
+-You should show that you enjoy working in a team. Say that you are open to suggestions from team members and seniors.
+
+-It is always good to work in a team as one can get the support of other members and in times of crisis everyone can work together to achieve the goal.
+Can you work independently?
+
+- Yes, I can work independently without supervision or support from a team
+
+- Do not emphasize on working independently as that will be seen as an inability to work with others.
+Do you have any questions for us?
+
+Always have a question ready to answer this one:
+
+- You can ask whether the company allows for lateral and vertical role changes
+
+- You can also ask whether the company encourages learning and development of employees
+
+- Ask whether the company has plans for expansion
+
+- You can also discuss your role in detail
+Are you willing to work for long hours, if the project demands that from you?
+
+- Discuss situations when you must have done so to fulfill project requirements in the past
+What is your current CTC and what are your expectations?
+
+- Be honest about your CTC, as you will have to produce you salary slip as a proof of employment
+
+- Be realistic when you state your expected CTC, you can ask for a 30-40% hike
+
+- If you are underpaid at your current company you can look for the standard salary paid for the experience you have and ask for that amount
+Are you planning to go for further studies?
+
+Be transparent in your answer.
+- If you are pursuing further studies, say so. Tell them why you want to go for that course
+- If you are taking up a distance education course or a part time course, they should know, as you will need to take leaves when you appear for exams
+Discuss your five characteristics.
+
+List down points that will help you professionally:
+
+- Independent
+- Responsible
+- Hard working
+- Multi tasker
+- Prompt
+- Add your characteristcs
+Tell us something about your hobbies.
+
+Answer it with honesty, as they can go deeper into this discussion. You can include:
+
+- Browsing the internet
+- Blogging,
+- Listening to music,
+- Chatting with friends,
+- Reading newspapers,
+- Reading books,
+- Shopping,
+- Watching movies….
+What is more important to you money or success?
+
+This is tricky question, as money and success both are important and you cannot outweigh the importance of one over the other. Personally you might prefer money over success or success over money, but it is better to be neutral when answering this question in an interview:
+
+You can say, that money and success both are important for you, but if you have to choose you would choose success. The reason being, if one is successful money often follows and you need not focus on money over success..
