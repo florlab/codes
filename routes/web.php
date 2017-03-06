@@ -28,6 +28,9 @@ Route::group(['middleware' => 'language'], function(){
     Route::match(array('GET'), 'fullpage','TestController@fullpage');
 
 
+    Route::match(array('GET'), 'vanilla','TestController@vanilla');
+
+
     Route::match(array('GET'), 'ui','TestController@ui');
 });
 

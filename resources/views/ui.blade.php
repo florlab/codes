@@ -16,8 +16,6 @@
         $( function() {
             $( "#resizable" ).resizable();
         } );
-
-
     </script>
 
     <style>

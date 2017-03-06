@@ -1,5 +1,18 @@
-OOP is a paradigm or pattern that provides the concepts of encapsulation, polymorphism, inheritance and abstraction
+object always consists of behavior and state
 
-Encapsulation referred to as data hiding.
-Visibility like public, private, protected
+Class is a logical collection of the objects
+
+OOP is a paradigm or pattern that provides the concepts of encapsulation, polymorphism, inheritance and abstraction.
+
+Encapsulation referred to as data hiding and it has level of visibility such as public, private, protected.
+
+Polymorphism simply means having multiple forms. and it has overriding
+
+Inheritance class acquires the inherent properties of its parent.
+
+Abstraction
+
+1. Interface
+2. Abstract Class
+
 

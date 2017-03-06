@@ -74,6 +74,10 @@ class TestController extends Controller
         return view('ui');
     }
 
+    public function vanilla(){
+        return view('vanilla');
+    }
+
     public function uploadIt(Request $request, AppSecurity $controller){
         return $controller->uploadFile($request);
     }
